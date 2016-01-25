@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Tristan Weissmann <weissmann@comsolit.com>
+ * @copyright Copyright (c) 2016 Comsolit AG (http://www.comsolit.com)
+ * @package Comsolit_RappenRunden
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="comsolit_rappenrunden" frontName="comsolit_rappenrunden">
+            <module name="Comsolit_RappenRunden" before="Magento_Backend" />
+        </route>
+    </router>
+</config>

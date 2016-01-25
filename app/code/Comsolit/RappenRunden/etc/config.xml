@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Tristan Weissmann <weissmann@comsolit.com>
+ * @copyright Copyright (c) 2016 Comsolit AG (http://www.comsolit.com)
+ * @package Comsolit_RappenRunden
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <comsolit_rappenrunden>
+            <general>
+                <enable>1</enable>
+                <currencies>CHF</currencies>
+                <apply>all</apply>
+            </general>
+        </comsolit_rappenrunden>
+    </default>
+</config>
