@@ -6,7 +6,7 @@
 */
 namespace Comsolit\RappenRunden\Model;
 
-class Calculation extends \Magento\Tax\Model\Calculation
+class Calculation
 {
 
     public function __construct(
@@ -16,17 +16,13 @@ class Calculation extends \Magento\Tax\Model\Calculation
         $this->_helper = $helper;
     }
 
-    /**
-     * Round to 1/20th
-     *
-     * @param   float $price
-     * @return  float
-     */
-    public function round($price)
+
+    public function beforeRound($interceptedInput, $price)
     {
         if($this->_helper->_isEnabled()){
             $price = round($price * 20) / 20;
         }
-        return $this->priceCurrency->round($price);
+        return [$price];
     }
+
 }

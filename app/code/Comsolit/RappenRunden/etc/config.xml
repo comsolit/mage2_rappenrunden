@@ -10,7 +10,7 @@
     <default>
         <comsolit_rappenrunden>
             <general>
-                <enable>1</enable>
+                <enable>0</enable>
             </general>
         </comsolit_rappenrunden>
     </default>

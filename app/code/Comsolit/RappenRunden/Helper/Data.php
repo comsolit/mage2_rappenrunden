@@ -6,9 +6,6 @@
  */
 namespace Comsolit\RappenRunden\Helper;
 
-/**
- * Contact base helper
- */
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
     /**
