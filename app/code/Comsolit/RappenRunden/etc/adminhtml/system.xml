@@ -23,7 +23,7 @@
                     <label>Enable Rappen Runden</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment>
-                        Set to 'Yes' to enable this module. Default value = 'Yes'
+                        Set to 'Yes' to enable this module. Default value = 'No'
                     </comment>
                 </field>
 
