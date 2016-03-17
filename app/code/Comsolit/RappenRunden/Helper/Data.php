@@ -29,18 +29,4 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         );
     }
 
-    /**
-     * Return the extension scope
-     *
-     * @return string
-     */
-    public function _getScope()
-    {
-        if ($this->_isEnabled())
-        {
-            return $this->scopeConfig->getValue(self::XML_PATH_SCOPE, \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
-        } else {
-            return 'none';
-        }
-    }
 }

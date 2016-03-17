@@ -4,10 +4,18 @@
 * @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
 * @package Comsolit_RappenRunden
 */
-namespace Comsolit\Rappenrunden\Model;
+namespace Comsolit\RappenRunden\Model;
 
-class Calculation extends Magento\Tax\Model\Calculation
+class Calculation extends \Magento\Tax\Model\Calculation
 {
+
+    public function __construct(
+        \Comsolit\RappenRunden\Helper\Data $helper
+    )
+    {
+        $this->_helper = $helper;
+    }
+
     /**
      * Round to 1/20th
      *
@@ -16,7 +24,9 @@ class Calculation extends Magento\Tax\Model\Calculation
      */
     public function round($price)
     {
-        $price = round($price * 20) / 20;
+        if($this->_helper->_isEnabled()){
+            $price = round($price * 20) / 20;
+        }
         return $this->priceCurrency->round($price);
     }
 }
