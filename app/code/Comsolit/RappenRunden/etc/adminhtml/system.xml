@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @author Tristan Weissmann <weissmann@comsolit.com>
- * @copyright Copyright (c) 2016 Comsolit AG (http://www.comsolit.com)
+ * @author comsolit AG team tw <info@comsolit.com>
+ * @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
  * @package Comsolit_RappenRunden
  */
 -->
@@ -24,26 +24,6 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment>
                         Set to 'Yes' to enable this module. Default value = 'Yes'
-                    </comment>
-                </field>
-
-                <!-- general currency list -->
-                <field id="currencies" translate="label comment" type="multiselect" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Apply to specific allowed Currencies</label>
-                    <source_model>Comsolit\RappenRunden\Model\Config\Backend\Config</source_model>
-                    <comment>
-                        Select the currencies to which to apply the rounding. Default value = 'CHF'.
-                        If you are not seeing your currency here, you need to enable it under
-                        General -> Currency Setup -> Currency Options -> Allowed Currencies
-                    </comment>
-                </field>
-
-                <!-- apply to where -->
-                <field id="apply" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Apply RappenRunden where</label>
-                    <source_model>Comsolit\RappenRunden\Model\Config\Backend\ApplyWhere</source_model>
-                    <comment>
-                        Which output should be modified? Default value = 'All prices and totals'
                     </comment>
                 </field>
 

@@ -11,8 +11,6 @@
         <comsolit_rappenrunden>
             <general>
                 <enable>1</enable>
-                <currencies>CHF</currencies>
-                <apply>all</apply>
             </general>
         </comsolit_rappenrunden>
     </default>

@@ -1,7 +1,7 @@
 <?php
 /**
- * @author Tristan Weissmann <weissmann@comsolit.com>
- * @copyright Copyright (c) 2016 Comsolit AG (http://www.comsolit.com)
+ * @author comsolit AG team tw <info@comsolit.com>
+ * @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
  * @package Comsolit_RappenRunden
  */
 \Magento\Framework\Component\ComponentRegistrar::register(

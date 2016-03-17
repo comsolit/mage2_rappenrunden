@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
-    <preference for="Magento\Quote\Model\Quote\Address\Total\Grand" type="Comsolit\RappenRunden\Model\Grand" />
-    <preference for="Magento\Catalog\Model\Product" type="Comsolit\RappenRunden\Model\Cart" />
+    <preference for="Magento\Tax\Model\Calculation" type="Comsolit\RappenRunden\Model\Calculation" />
 </config>
