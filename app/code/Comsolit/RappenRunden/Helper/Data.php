@@ -18,9 +18,9 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      *
      * @return Boolean
      */
-    public function _isEnabled()
+    public function isEnabled()
     {
-        return (bool)$this->scopeConfig->getValue(
+        return $this->scopeConfig->getValue(
             self::XML_PATH_ENABLED,
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE
         );
