@@ -1,9 +1,9 @@
 <?php
 /**
-* @author comsolit AG team tw <info@comsolit.com>
-* @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
-* @package Comsolit_RappenRunden
-*/
+ * @author comsolit AG team tw <info@comsolit.com>
+ * @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
+ * @package Comsolit_RappenRunden
+ */
 namespace Comsolit\RappenRunden\Plugin;
 
 class Calculation
