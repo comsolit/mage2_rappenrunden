@@ -1,6 +1,7 @@
 {
   "name": "comsolit/rappenrunden",
-  "description": "Rounds to 1/20th of the value",
+  "description": "Rounds store prices to 1/20th - ie: to 0.05 of your currency",
+  "keywords": ["rappenrunden", "runden", "round", "comsolit"],
   "require": {
     "php": "~5.5.0|~5.6.0|~7.0.0",
     "magento/module-store": "*",
@@ -9,18 +10,11 @@
   },
   "type": "magento2-module",
   "license": "GPL-3.0",
-  "extra": {
-    "map": [
-      [
-        "*",
-        "Comsolit/RappenRunden"
-      ]
-    ]
-  },
   "authors": [
     {
       "name": "Comsolit AG",
-      "email": "info@comsolit.com"
+      "email": "info@comsolit.com",
+      "homepage": "http://www.comsolit.com"
     }
   ],
   "autoload": {
