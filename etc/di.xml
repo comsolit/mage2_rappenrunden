@@ -2,12 +2,23 @@
 <!--
 /**
  * @author comsolit AG team tw <info@comsolit.com>
- * @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
+ * @copyright Copyright (c) 2020 comsolit AG (http://www.comsolit.com)
  * @package Comsolit_RappenRunden
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\Tax\Model\Calculation">
+
+    <!-- rounds (mini) cart values: discount / totals / and saves to quote & sales tables / leaves original price intact -->
+    <type name="Magento\Directory\Model\PriceCurrency">
         <plugin name="Comsolit_RappenRunden::beforeRound" type="Comsolit\RappenRunden\Plugin\Calculation" sortOrder="1" />
     </type>
+
+    <!-- rounds price in category and product view -->
+    <type name="Magento\Catalog\Pricing\Price\FinalPrice">
+        <plugin name="Comsolit_RappenRunden::afterGetValue" type="Comsolit\RappenRunden\Plugin\Calculation" sortOrder="1" />
+    </type>
+
+    <!-- rounds tier-prices in category and product view -->
+    <preference for="Magento\Framework\Pricing\Adjustment\Calculator" type="Comsolit\RappenRunden\Framework\Pricing\Adjustment\Calculator" />
+
 </config>

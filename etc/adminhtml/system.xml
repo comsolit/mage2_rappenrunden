@@ -2,7 +2,7 @@
 <!--
 /**
  * @author comsolit AG team tw <info@comsolit.com>
- * @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
+ * @copyright Copyright (c) 2020 comsolit AG (http://www.comsolit.com)
  * @package Comsolit_RappenRunden
  */
 -->
@@ -20,11 +20,23 @@
 
                 <!-- general enable module -->
                 <field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Enable Rappen Runden</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <label>Rappen Runden</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
                     <comment>
-                        Set to 'Yes' to enable this module. Default value = 'No'
+                        Set to 'Enable' to enable this module. Default value = 'Disable'
                     </comment>
+                </field>
+
+                <!-- set rounding -->
+                <field id="rounding" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Set Rounding</label>
+                    <source_model>Comsolit\RappenRunden\Model\RoundOptions</source_model>
+                    <comment>
+                        Set to '0.0.5' to round to 1/20th or to '0.1' to round to 1/10th. Default value = '0.0.5'
+                    </comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                 </field>
 
             </group>

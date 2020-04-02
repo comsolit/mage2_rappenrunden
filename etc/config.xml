@@ -2,7 +2,7 @@
 <!--
 /**
  * @author comsolit AG team tw <info@comsolit.com>
- * @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
+ * @copyright Copyright (c) 2020 comsolit AG (http://www.comsolit.com)
  * @package Comsolit_RappenRunden
  */
 -->
@@ -11,6 +11,7 @@
         <comsolit_rappenrunden>
             <general>
                 <enable>0</enable>
+                <rounding>20</rounding>
             </general>
         </comsolit_rappenrunden>
     </default>
