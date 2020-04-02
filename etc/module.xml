@@ -2,12 +2,12 @@
 <!--
 /**
  * @author comsolit AG team tw <info@comsolit.com>
- * @copyright Copyright (c) 2016 comsolit AG (http://www.comsolit.com)
+ * @copyright Copyright (c) 2020 comsolit AG (http://www.comsolit.com)
  * @package Comsolit_RappenRunden
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Comsolit_RappenRunden" setup_version="0.0.1">
+    <module name="Comsolit_RappenRunden" setup_version="0.0.3">
         <sequence>
             <module name="Magento_Tax" />
         </sequence>

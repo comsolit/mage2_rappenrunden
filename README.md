@@ -10,7 +10,7 @@ This functionality is particularly wide-spread in Switzerland, but is not depend
 
 Requirements
 ------------
-* Magento version 2.0.0 or greater
+* Magento version 2.2.x or greater
 
 Installation
 ------------
@@ -29,3 +29,18 @@ In the backend go to:
 and under ``General -> Enable Rappen Runden`` set the Option to ``Yes``. 
 
 Do not forget to refresh your cache.
+
+
+Changelog
+------------
+
+#####- version 0.0.3 [07 April 2020]
+
+    - New Feature: allow switching between 0.05 and 0.1 rounding
+    - Dropped PHP 5.5 support;
+    - Dropped Magento 2.0.x and 2.1.x support;
+    - Added PHP 7.3 and 7.4 support
+    - Fixed issues with tier prices
+
+    
+    
