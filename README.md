@@ -1,3 +1,6 @@
+**THIS REPO IS UNMAINTAINED / A NEW MAINTAINER IS NEEDED**
+=================
+
 Comsolit RappenRunden Magento2 Extension
 ========================================
 
